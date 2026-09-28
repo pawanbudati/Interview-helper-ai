@@ -59,7 +59,7 @@ export const HUDHeader: React.FC<HUDHeaderProps> = ({
             <Sparkles className="w-3.5 h-3.5 text-white" />
           </div>
           <span className="font-semibold tracking-wide text-xs text-slate-100 flex items-center gap-1.5">
-            PARAKEET <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">COPILOT</span>
+            INTERVIEW HELPER <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">AI</span>
           </span>
         </div>
 

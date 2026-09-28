@@ -1,5 +1,5 @@
 {
-  "name": "parakeet-ai-tool",
+  "name": "interview-helper-ai",
   "private": true,
   "version": "1.0.0",
   "main": "electron/main.cjs",

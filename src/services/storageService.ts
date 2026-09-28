@@ -1,11 +1,11 @@
 import type { CandidateProfile, TargetJob, AISettings, InterviewMode } from '../types';
 
 const STORAGE_KEYS = {
-  PROFILE: 'parakeet_profile',
-  TARGET_JOB: 'parakeet_target_job',
-  AI_SETTINGS: 'parakeet_ai_settings',
-  UI_PREFS: 'parakeet_ui_prefs',
-  INTERVIEW_MODE: 'parakeet_interview_mode'
+  PROFILE: 'interview_helper_profile',
+  TARGET_JOB: 'interview_helper_target_job',
+  AI_SETTINGS: 'interview_helper_ai_settings',
+  UI_PREFS: 'interview_helper_ui_prefs',
+  INTERVIEW_MODE: 'interview_helper_interview_mode'
 };
 
 export const defaultProfile: CandidateProfile = {

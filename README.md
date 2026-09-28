@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🦜 Parakeet AI Copilot
+# 🎯 Interview Helper AI
 ### *The Next-Generation Real-Time Heads-Up Display (HUD) for Live Technical & Behavioral Interviews*
 
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
@@ -13,7 +13,7 @@
 
 <br/>
 
-**Parakeet AI Copilot** is a high-performance, discreet desktop assistant engineered to eliminate interview anxiety and freeze-ups. Sitting directly below your webcam as an always-on-top, semi-transparent HUD, Parakeet captures conversation audio in real time, parses interviewer questions, and delivers structured talking points tailored specifically to **your actual resume, projects, and target role**.
+**Interview Helper AI** is a high-performance, discreet desktop assistant engineered to eliminate interview anxiety and freeze-ups. Sitting directly below your webcam as an always-on-top, semi-transparent HUD, Interview Helper AI captures conversation audio in real time, parses interviewer questions, and delivers structured talking points tailored specifically to **your actual resume, projects, and target role**.
 
 [Key Features](#-key-features) • [Architecture](#-system-architecture) • [Getting Started](#-getting-started) • [Interview Modes](#-specialized-interview-modes) • [Hotkeys](#-global-stealth-hotkeys) • [Configuration](#-configuration--profiles) • [Privacy](#-privacy--security)
 
@@ -46,7 +46,7 @@
 
 Live technical interviews demand instant recall under high stress. Candidates often struggle with momentary memory blocks or rambling responses. 
 
-**Parakeet AI Copilot** acts as a silent co-pilot:
+**Interview Helper AI** acts as a silent co-pilot:
 - **Zero Awkward Pauses:** Provides an immediate 1-2 sentence opener (*"Say This First"*) so you can start talking immediately while glancing through key details.
 - **Grounded in Your Experience:** Pulls quantifiable metrics, technologies, and achievements directly from your saved resume.
 - **Stealth Overlay:** Transparent, frameless window with adjustable opacity (35%–100%) and eye-line font scaling (`S`, `M`, `L`) designed to sit unobtrusively beside video call windows (Zoom, Google Meet, Microsoft Teams).
@@ -138,7 +138,7 @@ Select modes on the fly via the top navigation bar to tune the AI output format:
 
 ## 📜 Glanceable Teleprompter Structure
 
-Every answer returned by Parakeet follows a strict 4-tier schema designed for glanceability:
+Every answer returned by Interview Helper AI follows a strict 4-tier schema designed for glanceability:
 
 ```json
 {
@@ -160,7 +160,7 @@ Every answer returned by Parakeet follows a strict 4-tier schema designed for gl
 
 ## ⌨️ Global Stealth Hotkeys
 
-Parakeet registers native OS-level global keyboard shortcuts that function even when your video call or code editor is focused:
+Interview Helper AI registers native OS-level global keyboard shortcuts that function even when your video call or code editor is focused:
 
 | Shortcut | Action | Description |
 | :--- | :--- | :--- |
@@ -182,8 +182,8 @@ Parakeet registers native OS-level global keyboard shortcuts that function even 
 
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/your-username/parakeet-ai-copilot.git
-   cd parakeet-ai-copilot
+   git clone https://github.com/pawanbudati/Interview-helper-ai.git
+   cd Interview-helper-ai
    ```
 
 2. Install dependencies:
@@ -233,14 +233,14 @@ Navigate to `http://localhost:5173` in your browser.
 
 ## 🎙️ Audio Pipeline & Dual-Capture
 
-Parakeet features a two-tiered audio processing pipeline:
+Interview Helper AI features a two-tiered audio processing pipeline:
 
 1. **Microphone (Web Speech / Speech Recognition API):**
    - Transcribes your spoken answers and responses in real-time.
    - Continuous speech recognition engine with automatic silence detection and reconnection logic.
 
 2. **System Audio Loopback (WebRTC & Desktop Capturer):**
-   - In Electron mode, Parakeet accesses system audio streams using `navigator.mediaDevices.getUserMedia` with desktop capture constraints.
+   - In Electron mode, Interview Helper AI accesses system audio streams using `navigator.mediaDevices.getUserMedia` with desktop capture constraints.
    - Enables capturing the interviewer's voice directly from Zoom, Microsoft Teams, or Google Meet desktop apps or browser windows.
 
 ---
@@ -304,9 +304,9 @@ interview-helper-ai/
 ## 🔒 Privacy, Security & Ethics
 
 - **100% Client-Side / Local Storage:** All candidate profile data, resume text, target job info, and API keys are stored locally on your device (`localStorage`).
-- **No Third-Party Telemetry:** Parakeet does not transmit telemetry, analytics, or audio data to any central server.
+- **No Third-Party Telemetry:** Interview Helper AI does not transmit telemetry, analytics, or audio data to any central server.
 - **Direct API Calls:** Network requests are made strictly and directly from your machine to the respective AI provider's official endpoints (Google AI Studio, Groq, or OpenAI).
-- **Ethical Usage:** Parakeet is designed as an educational and preparation tool to assist candidates in structuring thoughts, practicing with simulated feedback, and communicating their true background effectively.
+- **Ethical Usage:** Interview Helper AI is designed as an educational and preparation tool to assist candidates in structuring thoughts, practicing with simulated feedback, and communicating their true background effectively.
 
 ---
 

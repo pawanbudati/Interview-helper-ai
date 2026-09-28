@@ -6,7 +6,7 @@ export const buildSystemPrompt = (
   mode: InterviewMode,
   settings: AISettings
 ): string => {
-  return `You are Parakeet Copilot, an elite real-time live interview co-pilot.
+  return `You are Interview Helper AI, an elite real-time live interview co-pilot.
 Your user is in a LIVE INTERVIEW right now. They need glanceable, high-impact bullet points they can speak naturally.
 
 CANDIDATE CONTEXT:

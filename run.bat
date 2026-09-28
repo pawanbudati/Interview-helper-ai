@@ -1,7 +1,7 @@
 @echo off
-title Parakeet AI Copilot
+title Interview Helper AI
 echo ============================================================
-echo   Starting Parakeet AI Copilot (Live Desktop Assistant)
+echo   Starting Interview Helper AI (Live Desktop Assistant)
 echo ============================================================
 echo.
 echo Hotkeys:
