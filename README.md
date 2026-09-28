@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎯 Interview Helper AI
+# <img src="public/favicon.svg" width="38" height="38" align="center" alt="Autobots Logo" /> Interview Helper AI
 ### *The Next-Generation Real-Time Heads-Up Display (HUD) for Live Technical & Behavioral Interviews*
 
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)

@@ -4,11 +4,11 @@ import {
   Pin,
   Minimize2,
   X,
-  Sparkles,
   GraduationCap,
   Eye,
   Type
 } from 'lucide-react';
+import { AutobotLogo } from './AutobotLogo';
 import type { InterviewMode } from '../types';
 
 interface HUDHeaderProps {
@@ -55,8 +55,8 @@ export const HUDHeader: React.FC<HUDHeaderProps> = ({
       {/* Top Bar with Title & Window Controls */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-6 h-6 rounded-md bg-gradient-to-tr from-emerald-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-emerald-500/20">
-            <Sparkles className="w-3.5 h-3.5 text-white" />
+          <div className="w-6 h-6 rounded-md bg-gradient-to-tr from-red-600 via-rose-500 to-red-700 flex items-center justify-center shadow-lg shadow-red-500/25 border border-red-400/30">
+            <AutobotLogo className="w-3.5 h-3.5 text-white drop-shadow-sm" />
           </div>
           <span className="font-semibold tracking-wide text-xs text-slate-100 flex items-center gap-1.5">
             INTERVIEW HELPER <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">AI</span>

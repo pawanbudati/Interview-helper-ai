@@ -1,21 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202.666 202.666">
-  <defs>
-    <linearGradient id="autobot-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f87171" />
-      <stop offset="50%" stop-color="#ef4444" />
-      <stop offset="100%" stop-color="#b91c1c" />
-    </linearGradient>
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#020617" />
-    </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#ef4444" flood-opacity="0.45"/>
-    </filter>
-  </defs>
-  <rect width="202.666" height="202.666" rx="44" fill="url(#bg-grad)" stroke="#334155" stroke-width="3" />
-  <g transform="translate(18.2, 18.2) scale(0.82)" filter="url(#glow)">
-    <path fill="url(#autobot-grad)" d="M128.26,200.145c-0.005,0-0.01,0-0.015,0H74.422c-0.075-0.005-0.157-0.003-0.236-0.012c-0.306-0.034-0.6-0.139-0.859-0.305
+import React from 'react';
+
+interface AutobotLogoProps {
+  className?: string;
+  size?: number;
+}
+
+export const AutobotLogo: React.FC<AutobotLogoProps> = ({ className = 'w-4 h-4', size }) => {
+  return (
+    <svg
+      viewBox="0 0 202.666 202.666"
+      className={className}
+      width={size}
+      height={size}
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Autobots Logo"
+    >
+      <path d="M128.26,200.145c-0.005,0-0.01,0-0.015,0H74.422c-0.075-0.005-0.157-0.003-0.236-0.012c-0.306-0.034-0.6-0.139-0.859-0.305
 	c-0.076-0.049-0.148-0.103-0.216-0.16l-49.646-41.14c-0.423-0.351-0.683-0.859-0.72-1.407l-5.101-76.38l-3.877-2.937
 	c-0.386-0.292-0.653-0.715-0.751-1.189L0.041,13.834c-0.129-0.625,0.048-1.275,0.477-1.749c0.429-0.473,1.058-0.71,1.693-0.645
 	l37.344,3.981c2.688-1.378,14.499-7.064,31.318-9.826c18.649-3.062,29.988-3.082,30.463-3.074
@@ -48,5 +49,6 @@
 	C64.672,69.384,64.034,69.7,63.384,69.7z M101.333,48.135c-0.399,0-0.799-0.12-1.143-0.358L78.357,32.58
 	c-0.717-0.5-1.027-1.406-0.766-2.24s1.034-1.401,1.908-1.401h43.667c0.874,0,1.646,0.567,1.908,1.401s-0.048,1.741-0.766,2.24
 	l-21.834,15.196C102.132,48.015,101.732,48.135,101.333,48.135z M85.874,32.938l15.459,10.76l15.459-10.76H85.874z" />
-  </g>
-</svg>
+    </svg>
+  );
+};
